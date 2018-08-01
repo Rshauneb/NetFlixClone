@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.navBar {
+  padding: 25px 0 25px 0;
+  background-color: black; }
+  .navBar div {
+    display: inline-block;
+    font-size: 20px;
+    color: white; }
+  .navBar .logo {
+    margin-left: 25px; }
+  .navBar .left {
+    margin-left: 25px; }
+  .navBar .right {
+    float: right;
+    margin-right: 25px; }
+    .navBar .right .line {
+      border-bottom: 1px solid white;
+      width: 100px;
+      color: red;
+      font-size: 18px;
+      border: none;
+      border-bottom: 1px solid white;
+      background-color: black; }
+    .navBar .right .line:focus {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid red; }
+    .navBar .right ul li {
+      color: white;
+      padding: 10px; }
+    .navBar .right ul li:hover {
+      color: red; }
+  .navBar ul li {
+    display: inline-block; }
+  .navBar ul li a {
+    text-decoration: none;
+    color: white; }
+  .navBar ul li a:hover {
+    color: red; }
+
+.largeImg {
+  padding: 200px 25px;
+  background: url(https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Avengers_Infinity_war_poster.jpeg/revision/latest?cb=20180316141550) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.movieData {
+  color: white;
+  background-color: #000;
+  opacity: 0.6;
+  margin: 0 auto;
+  padding: 3%; }
+  .movieData h1 {
+    color: white;
+    padding-top: 25px; }
+  .movieData p {
+    color: white;
+    padding: 25px 0;
+    line-height: 1.6; }
+
+.buttons {
+  margin-top: 70px; }
+  .buttons .btn1 {
+    color: white;
+    background-color: #000;
+    opacity: 0.8;
+    padding: 4px;
+    border-radius: 3px;
+    margin-right: 30px;
+    display: inline-block;
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer; }
+  .buttons .btn1:hover {
+    color: black;
+    background-color: #fff;
+    opacity: 1; }
+  .buttons .btn2 {
+    color: white;
+    background-color: #000;
+    opacity: 0.8;
+    padding: 4px;
+    border-radius: 3px;
+    margin-right: 30px;
+    display: inline-block;
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer; }
+  .buttons .btn2:hover {
+    color: black;
+    background-color: #fff;
+    opacity: 1; }
+
+.hover {
+  color: black;
+  background-color: #fff;
+  opacity: 1; }
+
+.vidSection {
+  width: 100%;
+  height: 200px;
+  background-color: #000;
+  padding-top: 50px; }
+  .vidSection .row {
+    width: 100%;
+    font-size: 0;
+    text-align: center; }
+  .vidSection .movBoxes {
+    display: inline-block;
+    width: 17.5%;
+    height: 150px;
+    background-color: red;
+    font-size: 16px;
+    position: relative;
+    top: 50%;
+    vertical-align: middle;
+    transition: 1.5s;
+    cursor: pointer; }
+  .vidSection .movBoxes:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    margin-left: 50px; }
+  .vidSection .mov1 {
+    background: url(https://vignette.wikia.nocookie.net/rushhour/images/9/9f/Rush_Hour_2_Slider.jpg/revision/latest?cb=20160224211223) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  .vidSection .mov2 {
+    background: url(https://ltpimages-1tmxd3aba43noa.stackpathdns.com/data/thumbs/full/24198/650/0/0/0/fast-and-furious-7-cast.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  .vidSection .mov3 {
+    background: url(http://xdesktopwallpapers.com/wp-content/uploads/2011/04/Avatar-Movie-Poster.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  .vidSection .mov4 {
+    background: url(http://digitalspyuk.cdnds.net/15/48/640x320/landscape-1448359869-movies-attack-on-titan-poster.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  .vidSection .mov5 {
+    background: url(https://wallup.net/wp-content/uploads/2016/04/10/333375-Tokyo_Ghoul-748x421.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
+.text {
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: 0.5s ease;
+  overflow: hidden; }
+
+.movBoxes:hover .overlay {
+  height: 18%; }
+
+@media screen and (max-width: 600px) {
+  .navBar {
+    height: 100px;
+    background-color: black; }
+  .navBar .left {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px; }
+  .navBar .right {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px; }
+  .vidSection {
+    height: 800px; }
+  .movBoxes {
+    display: block !important;
+    width: 80% !important;
+    margin: 0 auto; }
+  .text {
+    font-size: 8px; }
+  .movBoxes:hover {
+    transform: scale(1.2) !important; }
+  .movBoxes:hover .overlay {
+    height: 10%; } }
